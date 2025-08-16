@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function calculateTotals() {
-  const kit3Price = 121000;
+  const kit3Price = 122000;
   const kit4Price = 162000;
   const kit5Price = 194000;
 
@@ -302,4 +302,5 @@ function hideNotification(type) {
     } else { // type === "error"
         errorNotification.classList.remove("show");
     }
+
 }
