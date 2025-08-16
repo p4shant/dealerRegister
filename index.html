@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAMN Enterprises - Solar Panel Order Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-solar-panel logo"></i> KAMN Enterprises</h1>
+        <p>Solar Energy Solutions Provider - Dealer Order Form</p>
+      </header>
+
+      <div class="main-content">
+        <div class="bank-details">
+          <h2 class="section-title">
+            <i class="fas fa-university"></i> Banking Details
+          </h2>
+          <div class="bank-info">
+            <p><span class="highlight">Account Name:</span> KAMN ENTERPRISES</p>
+            <p><span class="highlight">Account Number:</span> 42897201249</p>
+            <p><span class="highlight">Bank Name:</span> STATE BANK OF INDIA</p>
+            <p><span class="highlight">IFSC Code:</span> SBIN0063734</p>
+          </div>
+          <p>
+            Please transfer the total amount to the above account and upload the
+            payment screenshot after completing the order.
+          </p>
+        </div>
+
+        <div class="form-container">
+          <h2 class="section-title">
+            <i class="fas fa-file-alt"></i> Dealer Order Form
+          </h2>
+
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="companyName" class="required"
+                >Your Firm/Company Name</label
+              >
+              <input type="text" id="companyName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="gstNumber" class="required">GST NUMBER</label>
+              <input type="text" id="gstNumber" required />
+            </div>
+
+            <div class="form-group">
+              <label for="mobile" class="required">Mobile Number</label>
+              <input type="tel" id="mobile" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="required">Email Address</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="orderDate" class="required">Date</label>
+              <input type="date" id="orderDate" required />
+            </div>
+
+            <div class="form-group">
+              <label for="billAddress" class="required">Bill To Address</label>
+              <textarea id="billAddress" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="shipAddress" class="required">Ship To Address</label>
+              <textarea id="shipAddress" rows="3" required></textarea>
+            </div>
+
+            <h3 class="section-title">
+              <i class="fas fa-solar-panel"></i> Solar Kit Selection
+            </h3>
+
+            <div class="kits-container">
+              <div class="kit-card">
+                <div class="kit-title">3.34 KW Solar Kit</div>
+                <div class="kit-price">₹1,21,000 + GST</div>
+                <ul class="kit-specs">
+                  <li>Solar panel: <span>6 pieces</span></li>
+                  <li>Inverter: <span>1 piece</span></li>
+                  <li>ACDB: <span>1 piece</span></li>
+                  <li>DCDB: <span>1 piece</span></li>
+                  <li>Earthing Kit: <span>1 Set</span></li>
+                  <li>L.A.: <span>1 piece</span></li>
+                </ul>
+                <div class="quantity-control">
+                  <button type="button" class="decrease" data-kit="kit3">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    id="kit3"
+                    min="0"
+                    value="0"
+                    data-price="122500"
+                  />
+                  <button type="button" class="increase" data-kit="kit3">
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <div class="kit-card">
+                <div class="kit-title">4.48 KW Solar Kit</div>
+                <div class="kit-price">₹1,62,000 + GST</div>
+                <ul class="kit-specs">
+                  <li>Solar panel: <span>8 pieces</span></li>
+                  <li>Inverter: <span>1 piece</span></li>
+                  <li>ACDB: <span>1 piece</span></li>
+                  <li>DCDB: <span>1 piece</span></li>
+                  <li>Earthing Kit: <span>1 Set</span></li>
+                  <li>L.A.: <span>1 piece</span></li>
+                </ul>
+                <div class="quantity-control">
+                  <button type="button" class="decrease" data-kit="kit4">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    id="kit4"
+                    min="0"
+                    value="0"
+                    data-price="165000"
+                  />
+                  <button type="button" class="increase" data-kit="kit4">
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <div class="kit-card">
+                <div class="kit-title">5 KW Solar Kit</div>
+                <div class="kit-price">₹1,94,000 + GST</div>
+                <ul class="kit-specs">
+                  <li>Solar panel: <span>9 pieces</span></li>
+                  <li>Inverter: <span>1 piece</span></li>
+                  <li>ACDB: <span>1 piece</span></li>
+                  <li>DCDB: <span>1 piece</span></li>
+                  <li>Earthing Kit: <span>1 Set</span></li>
+                  <li>L.A.: <span>1 piece</span></li>
+                </ul>
+                <div class="quantity-control">
+                  <button type="button" class="decrease" data-kit="kit5">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    id="kit5"
+                    min="0"
+                    value="0"
+                    data-price="195000"
+                  />
+                  <button type="button" class="increase" data-kit="kit5">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calculation">
+              <h3><i class="fas fa-calculator"></i> Order Summary</h3>
+              <div class="calculation-row">
+                <span>3.34 KW Kit:</span>
+                <span id="kit3-summary">0 × ₹1,21,000 = ₹0</span>
+              </div>
+              <div class="calculation-row">
+                <span>4.48 KW Kit:</span>
+                <span id="kit4-summary">0 × ₹1,62,000 = ₹0</span>
+              </div>
+              <div class="calculation-row">
+                <span>5 KW Kit:</span>
+                <span id="kit5-summary">0 × ₹1,94,000 = ₹0</span>
+              </div>
+              <div class="calculation-row">
+                <span>Total Units:</span>
+                <span id="total-units">0</span>
+              </div>
+              <div class="calculation-row">
+                <span>Subtotal:</span>
+                <span id="subtotal">₹0</span>
+              </div>
+              <div class="calculation-row">
+                <span>GST (12%):</span>
+                <span id="gst">₹0</span>
+              </div>
+              <div class="calculation-row total-row">
+                <span>Total Amount:</span>
+                <span id="grand-total">₹0</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="paymentProof">Payment Screenshot (Optional)</label>
+              <input type="file" id="paymentProof" accept="image/*" />
+            </div>
+
+            <div class="btn-container">
+              <button type="submit" class="btn btn-submit">
+                <i class="fas fa-paper-plane"></i> Submit Order
+              </button>
+              <button type="button" id="resetBtn" class="btn btn-reset">
+                <i class="fas fa-redo"></i> Reset Form
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span>Your order has been submitted successfully!</span>
+      </div>
+      <div class="error-notification" id="errorNotification">
+        <i class="fas fa-times-circle"></i>
+        <span></span>
+      </div>
+
+      <footer>
+        <p>© 2025 KAMN Enterprises. All rights reserved.</p>
+        <p>Solar Energy Solutions Provider</p>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
